@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cx.springboot02.mapper.CollectionMapper">
+    <resultMap id="CustomerResultMap" type="com.cx.springboot02.pojo.Collection">
+        <result column="id" property="id"/>
+        <result column="customer_id" property="customerId"/>
+        <result column="business_id" property="businessId"/>
+        <result column="isDelete" property="isDelete"/>
+    </resultMap>
+</mapper>

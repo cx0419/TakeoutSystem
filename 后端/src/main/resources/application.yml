@@ -1,0 +1,44 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /boot
+
+spring:
+  # redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 1000
+    # password:
+    pool:
+      minIdle: 5
+      maxIdle: 200
+      maxWait: 10000
+      maxActive: 8
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/takeoutweb?useSSL=false&amp&serverTimezone=UTC
+      username: root
+      password: chenxiang
+
+mybatis-plus:
+  global-config:
+
+    db-config:
+      table-prefix:
+      id-type:
+#      logic-delete-field:"delete"
+#      logic-delete-value:1
+#      logic-not-delete-value:0
+
+
+    banner: false
+
+#mybatis plus调试打印日志(查看sql)
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #开启驼峰命名转换
+    map-underscore-to-camel-case: true
+
