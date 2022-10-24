@@ -1,0 +1,28 @@
+{
+  "name": "takeoutweb",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
+    "@vueuse/core": "^9.3.0",
+    "ant-design-vue": "^3.2.13",
+    "axios": "^1.1.2",
+    "element-plus": "^2.2.18",
+    "vant": "^3.6.4",
+    "vue": "^3.2.37",
+    "vue-request": "^2.0.0-rc.4",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vue-tsc": "^0.40.4"
+  }
+}
